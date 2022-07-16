@@ -1,12 +1,12 @@
 const fs = require('fs');
 const input = fs.readFileSync('/dev/stdin').toString().trim();
 
-const USER_ID = input
+const YEAR = input
 
-function checkId(id){
-    return id + '??!'
+function CalculateYear(year){
+    return year - 543
 }
 
-const result = checkId(USER_ID);
+const result = CalculateYear(YEAR);
 
 console.log(result)
